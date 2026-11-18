@@ -1,22 +1,10 @@
-﻿int[] scores1 = { 60, 80, 40, 80, 90 };
-// int sum = 0;
-// foreach (int score in scores)
-// {
-//     sum += score;
-// }
+﻿// int[] scores1 = { 60, 80, 40, 80, 90 };
+// // int sum = 0;
+// // foreach (int score in scores)
+// // {
+// //     sum += score;
+// // }
 
-int SumArray(int[] numbers)
-{
-    int sum = 0;
-
-    foreach (int number in numbers)
-    {
-        sum += number;
-    }
-
-    return sum;
-}
-// Console.WriteLine(SumArray(scores));
 // int SumArray(int[] numbers)
 // {
 //     int sum = 0;
@@ -28,23 +16,20 @@ int SumArray(int[] numbers)
 
 //     return sum;
 // }
-// Console.WriteLine(SumArray(new int[] { 5, -2, 7 }));
+// // Console.WriteLine(SumArray(scores));
+// // int SumArray(int[] numbers)
+// // {
+// //     int sum = 0;
 
-int CountAtLeast(int[] numbers, int limit)
-{
-    int count = 0;
+// //     foreach (int number in numbers)
+// //     {
+// //         sum += number;
+// //     }
 
-    foreach (int number in numbers)
-    {
-        if (number >= limit)
-        {
-            count++;
-        }
-    }
+// //     return sum;
+// // }
+// // Console.WriteLine(SumArray(new int[] { 5, -2, 7 }));
 
-    return count;
-}
-// Console.WriteLine(CountAtLeast(scores, 50));
 // int CountAtLeast(int[] numbers, int limit)
 // {
 //     int count = 0;
@@ -53,73 +38,73 @@ int CountAtLeast(int[] numbers, int limit)
 //     {
 //         if (number >= limit)
 //         {
-//             count += 1;
+//             count++;
 //         }
 //     }
 
 //     return count;
 // }
-// Console.WriteLine(CountAtLeast(new int[] { 40, 50, 80 }, 50));
-int FindMax(int[] numbers)
-{
-    int max = numbers[0];
+// // Console.WriteLine(CountAtLeast(scores, 50));
+// // int CountAtLeast(int[] numbers, int limit)
+// // {
+// //     int count = 0;
 
-    for (int i = 1; i < numbers.Length; i++)
-    {
-        if (numbers[i] > max)
-        {
-            max = numbers[i];
-        }
-    }
+// //     foreach (int number in numbers)
+// //     {
+// //         if (number >= limit)
+// //         {
+// //             count += 1;
+// //         }
+// //     }
 
-    return max;
-}
-int FindMin(int[] numbers)
-{
-    int min = numbers[0];
-    for (int j = 0; j < numbers.Length; j++)
-    {
-        if (numbers[j] < min)
-        {
-            min = numbers[j];
-        }
-    }
-    return min;
-}
-// Console.WriteLine(FindMax(scores));
-// Console.WriteLine(FindMin(scores));
+// //     return count;
+// // }
+// // Console.WriteLine(CountAtLeast(new int[] { 40, 50, 80 }, 50));
+// int FindMax(int[] numbers)
+// {
+//     int max = numbers[0];
+
+//     for (int i = 1; i < numbers.Length; i++)
+//     {
+//         if (numbers[i] > max)
+//         {
+//             max = numbers[i];
+//         }
+//     }
+
+//     return max;
+// }
 // int FindMin(int[] numbers)
 // {
 //     int min = numbers[0];
-
-//     foreach (int number in numbers)
+//     for (int j = 0; j < numbers.Length; j++)
 //     {
-//         if (number < min)
+//         if (numbers[j] < min)
 //         {
-//             min = number;
+//             min = numbers[j];
 //         }
 //     }
-
 //     return min;
 // }
-// Console.WriteLine(FindMin(new int[] { 12, 4, 9 }));
-// int FindIndex(int[] numbers, int target)
-// {
-//     for (int i = 0; i < numbers.Length; i++)
-//     {
-//         if (numbers[i] == target)
-//         {
-//             return i;
-//         }
-//     }
+// // Console.WriteLine(FindMax(scores));
+// // Console.WriteLine(FindMin(scores));
+// // int FindMin(int[] numbers)
+// // {
+// //     int min = numbers[0];
 
-//     return -1;
-// }
-// Console.WriteLine(FindIndex(scores, 80));
-// Console.WriteLine(FindIndex(scores, 100));
+// //     foreach (int number in numbers)
+// //     {
+// //         if (number < min)
+// //         {
+// //             min = number;
+// //         }
+// //     }
+
+// //     return min;
+// // }
+// // Console.WriteLine(FindMin(new int[] { 12, 4, 9 }));
 int FindIndex(int[] numbers, int target)
 {
-
     for (int i = 0; i < numbers.Length; i++)
     {
         if (numbers[i] == target)
@@ -130,6 +115,21 @@ int FindIndex(int[] numbers, int target)
 
     return -1;
 }
+// // Console.WriteLine(FindIndex(scores, 80));
+// // Console.WriteLine(FindIndex(scores, 100));
+// int FindIndex(int[] numbers, int target)
+// {
+
+//     for (int i = 0; i < numbers.Length; i++)
+//     {
+//         if (numbers[i] == target)
+//         {
+//             return i;
+//         }
+//     }
+
+//     return -1;
+// }
 // Console.WriteLine(FindIndex(scores, 80));
 // Console.WriteLine(FindIndex(scores, 60));
 // Console.WriteLine(FindIndex(scores, 100));
@@ -158,11 +158,26 @@ int FindIndex(int[] numbers, int target)
 // }
 
 
-Console.WriteLine(CountAtLeast(new int[] { 49, 50, 51 }, 50));
+// Console.WriteLine(CountAtLeast(new int[] { 49, 50, 51 }, 50));
 
-int[] test = { -10, -3, -25, -7 };
-Console.WriteLine(FindMin(test));
-Console.WriteLine(FindMax(test));
+// int[] test = { -10, -3, -25, -7 };
+// Console.WriteLine(FindMin(test));
+// Console.WriteLine(FindMax(test));
 
-Console.WriteLine(FindIndex(scores1, 60));
-Console.WriteLine(FindIndex(scores1, 100));
+// Console.WriteLine(FindIndex(scores1, 60));
+// Console.WriteLine(FindIndex(scores1, 100));
+// Вариант 3
+int FindLastIndex(int[] numbers, int target)
+{
+    int ind = -1;
+    for (int i = 0; i < numbers.Length; i++)
+    {
+        if (numbers[i] == target)
+        {
+            ind = i;
+        }
+    }
+    return ind;
+}
+Console.WriteLine(FindLastIndex(new int[] { 5, 8, 5, 10, 5 }, 5));
+Console.WriteLine(FindLastIndex(new int[] { 5, 8, 5, 10, 5 }, 7));
